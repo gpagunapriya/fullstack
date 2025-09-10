@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>STUDENT REGISTRATION FORM</title>
+    <style>
+        .temp {
+            border: 2px solid black;
+            width: 40%;
+            margin: 5% auto;
+            padding: 15px;
+            background-color: rgb(241, 207, 164);
+            border-radius: 10px;
+        }
+        .form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+        }
+        .form label {
+            font-weight: bold;
+        }
+        .form input {
+            padding: 6px;
+        }
+        .full-row {
+            grid-column: span 2;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            background: #7bb1ed;
+            color: rgb(232, 223, 223);
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #1a5fbf;
+        }
+    </style>
+</head>
+<body>
+    <div class="temp">
+        <h2 style="text-align:center;">STUDENT REGISTRATION FORM</h2>
+        <form class="form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" placeholder="Enter phone number">
+
+            <label for="hobbies">Hobbies:</label>
+            <input type="text" id="hobbies" name="hobbies" placeholder="hobbies">
+
+
+
+            <label>Gender:</label>
+            <div>
+                <input type="radio" id="male" name="gender" value="Male"> Male
+                <input type="radio" id="female" name="gender" value="Female"> Female
+            </div>
+
+            <div class="full-row">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
